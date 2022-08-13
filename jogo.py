@@ -8,7 +8,7 @@ print('''Escolha um valor:
 Pedra[0]
 Papel[1]
 Tesoura[2]''')
-vp = input('>')
+vp = int(input('>'))
 
 sleep(0.5)
 print('Jo')
@@ -21,27 +21,31 @@ print(pc)
 if pc == 'Pedra' and vp == 0:
     print('Empate')
 
-if pc =='Papel' and vp == 1:
+elif pc =='Papel' and vp == 1:
     print('Empate')
 
-if pc == 'Tesoura' and vp == 2:
+elif pc == 'Tesoura' and vp == 2:
     print('Empate')
 
 
-if pc == 'Pedra' and vp == 1:
+elif pc == 'Pedra' and vp == 1:
     print('Você ganhou')
 
-if pc == 'Papel' and vp == 2:
+elif pc == 'Papel' and vp == 2:
     print('Você ganhou')
 
-if pc == 'Tesoura' and vp == 0:
+elif pc == 'Tesoura' and vp == 0:
     print('Você ganhou')
 
 
-if pc =='Pedra' and vp == 2:
+elif pc =='Pedra' and vp == 2:
     print('Você perdeu')
 
-if pc == 'Papel' and vp == 0:
+elif pc == 'Papel' and vp == 0:
     print('Você perdeu')
-if pc == 'Tesoura' and vp == 1:
+
+elif pc == 'Tesoura' and vp == 1:
     print('Você perdeu')
+
+
+print('Fim')
