@@ -53,12 +53,14 @@ while True:
         escolha = input('Deseja continuar [S/N]? ')
         escolha = escolha.upper()
         if escolha == 'S':
-            continue
+            break
         elif escolha == 'N':
             break
         else:
             print('Digite um valor válido!')
-    break
-
+    if escolha == 'S':
+        continue
+    elif escolha == 'N':
+        break
 
 print('Fim')
