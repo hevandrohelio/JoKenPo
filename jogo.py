@@ -10,10 +10,6 @@ while True:
     Papel[1]
     Tesoura[2]''')
     vp = int(input('>'))
-    
-    if vp != 0 or vp != 1 or vp != 2:
-        print('Digite um valor válido!')
-        continue
 
     sleep(0.5)
     print('Jo')
@@ -51,7 +47,7 @@ while True:
 
     elif pc == 'Tesoura' and vp == 1:
         print('Você perdeu')
-        
+
     escolha = ''
     while escolha !='N':
         escolha = input('Deseja continuar [S/N]? ')
